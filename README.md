@@ -1,4 +1,4 @@
-# HashingAnalysis
+# Hashing Analysis
 > Comparative Time analysis of Cuckoo Hashing and Chaining
 
 ## Table of contents
@@ -47,11 +47,11 @@ The amortized time for all cases of cuckoo hashing algorithm is O(1).
 * Random data set of (key, value) pairs is generated using a random generator.
 
 ## Comparative Analysis:
-The following plot demonstrates the relation between log(1+alpha) with log(insertion time in ns) for chained hashing: <br/>
+The following plot demonstrates the relation between log(1+alpha) with log(insertion time in ns) for chained hashing: <br/><br/>
 <img width="849" alt="Chaining graph" src="https://user-images.githubusercontent.com/31099049/70860628-cd0a6080-1ed8-11ea-9434-06b9f2de66e6.png">
 <br/>
 
-The following plot demonstrates the relation between log(alpha) with log(insertion time in ns) for cuckoo hashing: <br/>
+The following plot demonstrates the relation between log(alpha) with log(insertion time in ns) for cuckoo hashing: <br/><br/>
 <img width="983" alt="Cuckoo Chart" src="https://user-images.githubusercontent.com/31099049/70860492-2b364400-1ed7-11ea-9385-c5852de45f4d.png">
 <br/>
 
@@ -66,7 +66,7 @@ Hence, Cuckoo Hashing insertion operation, including any rehashing, is an amorti
 For Chaining, the plot between log(1+alpha) and log(insertion time in ns) shows that as the alpha increases, the average time taken to insert elements also increase. This is because an increase in the load factor increases the probability of collision. When collisions occur, new elements are needed to be inserted into the head of linked lists of their cells. To search these elements, the worst case time will be when all elements are present in one linked list and the element to be searched is at the end of a linked list. However, insertion and search are amortized constant-time operation. Average insertion and search time is constant. However, some keys take more time than others, as visible in the plot. Insertion and search depends on the load factor alpha.
 
 ## References
-1. Stanford University CS166 Lecture Notes: https://web.stanford.edu/class/ cs166/lectures/13/Small13.pdf
+1. Stanford University CS166 Lecture Notes: https://web.stanford.edu/class/cs166/lectures/13/Small13.pdf
 2. University of California Irvine CS-261P Data Structures class notes.
 
 ## Contact
